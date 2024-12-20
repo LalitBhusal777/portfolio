@@ -1,0 +1,159 @@
+/* About Section */
+.about {
+  font-family: "Arial", sans-serif;
+  color: #ecf0f1; /* Light text for contrast */
+  padding: 60px 20px;
+  background-color: #000; /* Black background */
+  line-height: 1.8;
+  margin-top: 80px; /* To offset fixed navbar */
+}
+
+/* About Container */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+/* About Image */
+.about-image img {
+  max-width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Adjusted for better contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Adjusted for black background */
+}
+
+/* About Details */
+.about-details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ecf0f1; /* Light text for headings */
+  border-bottom: 2px solid #e74c3c; /* Secondary color */
+  display: inline-block;
+}
+
+.about-details p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #ecf0f1; /* Light text color */
+  text-align: justify;
+}
+
+/* About Info */
+.about-info {
+  margin-top: 15px;
+}
+
+.about-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ecf0f1; /* Light text color */
+}
+
+/* About Achievements */
+.about-achievements {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #444; /* Subtle border for black background */
+  background-color: #111; /* Dark gray for subtle contrast */
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-achievements:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+}
+
+.about-achievements h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ecf0f1; /* Light text color */
+}
+
+.about-achievements p {
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  margin: 10px 0;
+}
+
+/* Skills Container */
+.skills-container {
+  margin-top: 15px;
+}
+
+.skills-container span {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ecf0f1; /* Light border to match text */
+  border-radius: 20px;
+  background-color: #333; /* Dark gray for better contrast */
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skills-container span:hover {
+  background-color: #444; /* Slightly lighter shade for hover */
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 140px; /* Smaller profile image on smaller screens */
+  }
+
+  .about-details h2 {
+    font-size: 1.8rem; /* Slightly smaller font size for headings */
+  }
+
+  .about-details p {
+    font-size: 0.95rem; /* Smaller font size for paragraphs */
+  }
+
+  .about-achievements {
+    padding: 15px;
+  }
+
+  .skills-container span {
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-details p {
+    font-size: 0.9rem;
+  }
+
+  .skills-container span {
+    padding: 6px 12px; /* Adjust padding for smaller screens */
+    font-size: 0.85rem;
+  }
+}

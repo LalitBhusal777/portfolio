@@ -1,0 +1,54 @@
+.services {
+  padding: 2rem;
+  background-color: #000000; /* Black background for the entire section */
+  text-align: center;
+}
+
+.services-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* White text for title */
+}
+
+.services-title p {
+  font-size: 1.2rem;
+  color: #aaaaaa; /* Light gray for subtitle text */
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  background-color: #1a1a1a; /* Dark gray box background to contrast with black */
+  border: 1px solid #333; /* Slightly lighter border for separation */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.15); /* Enhanced shadow on hover */
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #00bcd4; /* Vibrant blue color for icons */
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* White for service title */
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #cccccc; /* Light gray for service description */
+}

@@ -1,0 +1,117 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010; /* Dark background */
+  padding: 1rem 2rem;
+  color: white;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+  color: #00bcd4; /* Highlight color */
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: #101010;
+  padding: 1rem;
+  z-index: 999;
+}
+
+/* Anchor Link Styling */
+.Anchor-link {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.Anchor-link.active-link {
+  color: #00bcd4; /* Highlight the active link */
+  font-weight: bold;
+}
+
+/* Connect With Me Section */
+.nav-connect {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.nav-connect a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-connect a:hover {
+  color: #00bcd4; /* Highlight color */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-connect {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
